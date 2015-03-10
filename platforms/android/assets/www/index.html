@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, target-densitydpi=device-dpi" />
+    <title>Web App Template</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+    
+<!-- tabbed navigation bar -->
+<nav>
+<ul class="tabs">
+    <li class="tab">
+        <a href="#home" data-role="pagelink" id="svg" class="activetab">
+           <img src="svg/home.svg" type="image/svg+xml" width="25" height="25"></img>
+        </a>
+    </li>
+    <li class="tab">
+        <a href="#map" data-role="pagelink" id="svg" class="">
+           <img src="svg/map-marker.svg" type="image/svg+xml" width="25" height="25"></img>
+        </a>
+    </li>
+    <li class="tab">
+        <a href="#contacts" data-role="pagelink" id="svg" class="">
+           <img src="svg/person.svg" type="image/svg+xml" width="25" height="25"></img>
+        </a>
+    </li>
+</ul>
+</nav>
+
+<div data-role="page" id="home" class="active">
+  <div data-role="content">
+    <h3>The Home-Page</h3>
+    <p>This is my amazing cordova app I created. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat, ipsum eget dignissim scelerisque, ligula est volutpat magna, id tincidunt est sapien eget lorem. Donec hendrerit convallis elementum. Fusce elementum ut nunc non rutrum. Vestibulum convallis, mauris id condimentum eleifend, tortor urna feugiat turpis, vitae blandit ante metus nec libero. Nulla a nisl vitae turpis ultrices rhoncus. Donec pellentesque leo lorem, in accumsan magna congue vel. Integer tincidunt urna non justo rutrum, eget suscipit diam pulvinar. Etiam non semper diam. Phasellus vel turpis sit amet quam sodales molestie. Sed sem tellus, venenatis vitae velit sagittis, pretium porta quam. Nullam ac quam finibus, aliquam nisi venenatis, vulputate lorem.</p>
+    
+  </div>
+</div>
+    
+<div data-role="page" id="map" class="hidden">
+  <div data-role="content">
+    <h3>Your Location</h3>
+    <div id="output">
+      
+     </div>
+  </div>
+</div>
+
+<div data-role="page" id="contacts" class="hidden">
+  <div data-role="content">
+    <h3>Random Contact</h3>
+      <p id="randomContact"></p>
+    
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+<script src="cordova.js"></script>
+
+</html>
